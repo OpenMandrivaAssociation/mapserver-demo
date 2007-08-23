@@ -1,6 +1,6 @@
 Name:		mapserver-demo
 Version:	3.5
-Release:	%mkrel 2
+Release:	%mkrel 3
 Summary:	Demo Data for Mapserver
 Source:		http://mapserver.gis.umn.edu/dist/itasca%{version}.tar.gz
 Patch:		mapserver-demo-webserver-paths.patch
