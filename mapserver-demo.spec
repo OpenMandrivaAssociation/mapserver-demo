@@ -9,7 +9,6 @@ License:	GPL
 Group:		Sciences/Geosciences
 Requires:	mapserver
 BuildRequires:	ImageMagick
-BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 Buildarch:	noarch
 
 %description
