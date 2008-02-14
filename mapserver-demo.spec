@@ -7,6 +7,7 @@ Patch:		mapserver-demo-webserver-paths.patch
 URL:		http://mapserver.gis.umn.edu/
 License:	GPL
 Group:		Sciences/Geosciences
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Requires:	mapserver
 BuildRequires:	ImageMagick
 Buildarch:	noarch
