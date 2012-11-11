@@ -1,0 +1,76 @@
+--- itasca/demo_init.html.orig	2001-12-17 07:44:55.000000000 +0200
++++ itasca/demo_init.html	2003-03-18 19:48:03.000000000 +0200
+@@ -9,14 +9,14 @@
+ 
+ <form method=GET action="/cgi-bin/mapserv">
+ 
+-<input type="hidden" name="map" value="/usr/local/apache/htdocs/mapserver_demos/itasca/demo.map">
++<input type="hidden" name="map" value="/var/www/html/mapserver/itasca/demo.map">
+ <input type="hidden" name="layer" value="lakespy2">
+ <input type="hidden" name="layer" value="dlgstln2">
+ <input type="hidden" name="zoomsize" value=2>
+ 
+ <input type="hidden" name="program" value="/cgi-bin/mapserv">
+-<input type="hidden" name="map_web_imagepath" value="/usr/local/apache/htdocs/tmp/">
+-<input type="hidden" name="map_web_imageurl" value="/tmp/">
++<input type="hidden" name="map_web_imagepath" value="/var/www/html/mapserver/tmp/">
++<input type="hidden" name="map_web_imageurl" value="/mapserver/tmp/">
+ 
+ <center><input type="submit" value="Initialize"></center>
+ 
+--- itasca/demo.map.orig	2001-12-17 17:29:32.000000000 +0200
++++ itasca/demo.map	2003-03-18 19:47:37.000000000 +0200
+@@ -44,7 +44,7 @@
+     WMS_ACCESSCONSTRAINTS none
+ 
+     # change this value to match your setup
+-    WMS_ONLINERESOURCE "http://localhost.localdomain/mapserver_demos/itasca/demo_init.html"
++    WMS_ONLINERESOURCE "http://localhost/mapserver/itasca/demo_init.html"
+ 
+     WMS_SRS "EPSG:26915"
+   END
+@@ -61,7 +61,7 @@
+ # Start of reference map
+ #
+ REFERENCE
+-  IMAGE graphics/reference.gif
++  IMAGE graphics/reference.png
+   EXTENT 393234.393701263 5205405.16440722 495769.579718949 5307959.02579127
+   SIZE 120 120
+   STATUS ON
+@@ -262,7 +262,7 @@
+   LABELITEM "road_name"
+   CLASS
+     COLOR 255 255 255
+-    SYMBOL 'symbols/ctyhwy.gif'    
++    SYMBOL 'symbols/ctyhwy.png'    
+     LABEL
+       MINFEATURESIZE 40
+       MINDISTANCE 150
+@@ -310,7 +310,7 @@
+   CLASS
+     EXPRESSION "3"
+     COLOR 0 0 0 # dummy color
+-    SYMBOL 'symbols/sthwy.gif'
++    SYMBOL 'symbols/sthwy.png'
+     LABEL
+       MINFEATURESIZE 50
+       MINDISTANCE 150
+@@ -322,7 +322,7 @@
+   CLASS
+     EXPRESSION "2" 
+     COLOR 0 0 0 # dummy color
+-    SYMBOL 'symbols/ushwy.gif'
++    SYMBOL 'symbols/ushwy.png'
+     LABEL
+       MINFEATURESIZE 50
+       MINDISTANCE 150
+@@ -334,7 +334,7 @@
+   CLASS
+     EXPRESSION "1" 
+     COLOR 0 0 0 # dummy color
+-    SYMBOL 'symbols/interstate.gif'
++    SYMBOL 'symbols/interstate.png'
+     LABEL
+       MINFEATURESIZE 50
+       MINDISTANCE 150
