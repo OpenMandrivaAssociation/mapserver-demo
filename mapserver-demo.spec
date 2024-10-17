@@ -4,7 +4,7 @@ Release:	%mkrel 7
 Summary:	Demo Data for Mapserver
 Source:		http://mapserver.gis.umn.edu/dist/itasca%{version}.tar.gz
 Patch:		mapserver-demo-webserver-paths.patch
-URL:		http://mapserver.gis.umn.edu/
+URL:		https://mapserver.gis.umn.edu/
 License:	GPL
 Group:		Sciences/Geosciences
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
